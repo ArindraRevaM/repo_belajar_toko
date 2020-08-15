@@ -22,7 +22,7 @@ class CreateOrdersTable extends Migration
             $table->unsignedBigInteger('id_product');
 
             $table->foreign('id_customers')->references('id_customers')->on('customers');
-            $table->foreign('id_product')->references('id_product')->on('product');
+            $table->foreign('id_product')->references('id_product')->on('product');                                                                                                                                                 
         });
     }
 
